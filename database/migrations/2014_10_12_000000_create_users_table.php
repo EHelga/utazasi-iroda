@@ -22,7 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('phonenumber');
             $table->rememberToken();
             $table->timestamps();
-            $table->integer('travelId')->default('1');
+            $table->integer('travelId')->nullable()->default(null);
         });
     }
 
